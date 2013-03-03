@@ -1,0 +1,16 @@
+#! /bin/zsh
+
+git_prompt_info() {
+  if [[ -d .git ]]; then
+    echo "$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/') "
+  fi
+}
+
+setopt prompt_subst
+# autoload colors
+# colors
+
+# HOSTNAME=`hostname | cut -d"." -f2,3,4`
+
+PROMPT='[%c] $(git_prompt_info)%% '
+RPROMPT='[%n@%m]'

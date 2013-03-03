@@ -1,0 +1,1 @@
+alias diff='diff -upN'                                                                alias ll='ls -la'

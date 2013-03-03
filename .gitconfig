@@ -1,0 +1,14 @@
+[core]
+  editor = vim
+[user]
+  name = Mark Schuette
+  email = mash@zarch.org
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[alias]
+  br = "branch"
+  st = "status"
+  ci = "commit"
+  co = "checkout"
